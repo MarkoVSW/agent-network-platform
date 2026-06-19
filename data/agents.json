@@ -225,7 +225,7 @@
     "description": "Generates website designs from natural language briefs, producing Figma-ready layouts and responsive HTML/CSS.",
     "owner": "prismteam-ai",
     "repoUrl": "https://github.com/prismteam-ai/website-design-agent",
-    "status": "in_review",
+    "status": "certified",
     "version": "0.5.0",
     "capabilities": [
       {
@@ -264,7 +264,8 @@
     "installCommand": "git clone https://github.com/prismteam-ai/website-design-agent",
     "discoveredAt": "2026-05-30T15:40:43.022Z",
     "registeredAt": "2026-06-04T15:40:43.022Z",
-    "lastUpdatedAt": "2026-06-17T15:40:43.022Z",
+    "certifiedAt": "2026-06-19T15:51:23.220Z",
+    "lastUpdatedAt": "2026-06-19T15:51:23.220Z",
     "source": "seed",
     "repoMeta": {
       "stars": 8,
@@ -280,7 +281,7 @@
     "description": "RAG-powered property intelligence platform providing real-time market analysis, valuation insights, and investment recommendations.",
     "owner": "prismteam-ai",
     "repoUrl": "https://github.com/prismteam-ai/oracle-property-intelligence-platform",
-    "status": "registered",
+    "status": "rejected",
     "version": "0.3.0",
     "capabilities": [
       {
@@ -305,7 +306,7 @@
     "installCommand": "",
     "discoveredAt": "2026-06-04T15:40:43.022Z",
     "registeredAt": "2026-06-09T15:40:43.022Z",
-    "lastUpdatedAt": "2026-06-14T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-19T15:51:24.399Z",
     "source": "seed",
     "repoMeta": {
       "stars": 5,
@@ -313,5 +314,51 @@
       "lastPush": "2026-06-14T15:40:43.022Z",
       "defaultBranch": "main"
     }
+  },
+  {
+    "id": "4e99ca3e-676e-4ce2-ba4f-3ea7946a9883",
+    "slug": "soofi-xyz-team-kit-arceus",
+    "name": "Arceus (Master Router)",
+    "description": "Master routing agent that delegates to specialists based on natural language task descriptions",
+    "owner": "soofi-xyz",
+    "repoUrl": "https://github.com/soofi-xyz/soofi-xyz-team-kit",
+    "status": "registered",
+    "version": "0.1.0",
+    "capabilities": [],
+    "dependencies": [],
+    "tags": [
+      "team-kit",
+      "router",
+      "orchestration"
+    ],
+    "readme": "",
+    "installCommand": "",
+    "discoveredAt": "2026-06-17T15:40:43.022Z",
+    "registeredAt": "2026-06-19T15:50:29.183Z",
+    "lastUpdatedAt": "2026-06-19T15:50:29.183Z",
+    "source": "github_scan"
+  },
+  {
+    "id": "3324957b-ee10-4442-907a-009416fd1b4f",
+    "slug": "soofi-xyz-team-kit-alakazam",
+    "name": "Alakazam (RAG Specialist)",
+    "description": "Infrastructure and RAG systems specialist for building semantic search pipelines",
+    "owner": "soofi-xyz",
+    "repoUrl": "https://github.com/soofi-xyz/soofi-xyz-team-kit",
+    "status": "registered",
+    "version": "0.1.0",
+    "capabilities": [],
+    "dependencies": [],
+    "tags": [
+      "team-kit",
+      "rag",
+      "infrastructure"
+    ],
+    "readme": "",
+    "installCommand": "",
+    "discoveredAt": "2026-06-17T15:40:43.022Z",
+    "registeredAt": "2026-06-19T15:50:29.924Z",
+    "lastUpdatedAt": "2026-06-19T15:50:29.924Z",
+    "source": "github_scan"
   }
 ]

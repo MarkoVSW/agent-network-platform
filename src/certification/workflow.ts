@@ -57,6 +57,7 @@ export function resolveReview(
 ): { review: Review | null; error?: string } {
   const review = store.findById(id);
   if (!review) return { review: null, error: "Review not found" };
+  if (review.status !== "pending") return { review: null, error: "Review already resolved" };
 
   // Map decision to agent transition action
   const actionMap: Record<string, string> = {

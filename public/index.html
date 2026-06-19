@@ -404,10 +404,18 @@ async function updateChecklist(reviewId, key, val) {
   await api(`/api/reviews/${reviewId}`, {method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({checklist})});
 }
 
+let resolvingReview = false;
 async function resolveReview(reviewId, decision) {
+  if (resolvingReview) return;
+  resolvingReview = true;
+  // Disable all review buttons immediately
+  document.querySelectorAll('.btn-green,.btn-red,.btn-yellow').forEach(b => { b.disabled = true; b.style.opacity = '0.5'; });
   const comments = document.getElementById('rc_'+reviewId)?.value || '';
-  await api(`/api/reviews/${reviewId}`, {method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({decision,comments})});
-  toast(`Review ${decision}`);
+  try {
+    const result = await api(`/api/reviews/${reviewId}`, {method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({decision,comments})});
+    if (result.error) { toast(result.error, 'var(--red)'); } else { toast(`Review ${decision}`); }
+  } catch(e) { toast('Error: ' + e.message, 'var(--red)'); }
+  resolvingReview = false;
   loadCertification();
 }
 
