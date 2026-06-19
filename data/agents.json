@@ -1,6 +1,6 @@
 [
   {
-    "id": "030ba699-9d77-4470-8620-905dbcaae308",
+    "id": "49784418-39da-405b-892c-8fbf983176b2",
     "slug": "x-engagement-reply-agent",
     "name": "X Engagement Reply Agent",
     "description": "Polls targeted X authors, matches posts against Soofi Safavi articles via MCP semantic similarity, generates LLM reply drafts, creates Asana approval tasks.",
@@ -74,20 +74,20 @@
     ],
     "readme": "# X Engagement Reply Agent\n\nA standalone, code-managed agent for monitoring X authors and generating recommended reply drafts grounded in Soofi Safavi's published articles.\n\n## Quick Start\n\n```bash\nnpm install\nnpm run dashboard  # http://localhost:3000\n```",
     "installCommand": "git clone https://github.com/prismteam-ai/x-engagement-reply-agent && cd x-engagement-reply-agent && npm install",
-    "discoveredAt": "2026-05-20T15:40:43.022Z",
-    "registeredAt": "2026-05-25T15:40:43.022Z",
-    "certifiedAt": "2026-06-14T15:40:43.022Z",
-    "lastUpdatedAt": "2026-06-18T15:40:43.022Z",
+    "discoveredAt": "2026-05-20T17:00:31.140Z",
+    "registeredAt": "2026-05-25T17:00:31.140Z",
+    "certifiedAt": "2026-06-14T17:00:31.140Z",
+    "lastUpdatedAt": "2026-06-18T17:00:31.140Z",
     "source": "seed",
     "repoMeta": {
       "stars": 12,
       "language": "TypeScript",
-      "lastPush": "2026-06-18T15:40:43.022Z",
+      "lastPush": "2026-06-18T17:00:31.140Z",
       "defaultBranch": "main"
     }
   },
   {
-    "id": "6997d06b-4280-4f22-9f6e-1bcdcdc83a92",
+    "id": "7a165fc9-6c90-4fcc-9f83-e642c9e39dac",
     "slug": "chief-of-staff-agent",
     "name": "Chief of Staff Agent",
     "description": "Executive operations agent that manages scheduling, meeting prep, follow-ups, and stakeholder communications for senior leadership.",
@@ -146,20 +146,20 @@
     ],
     "readme": "# Chief of Staff Agent\n\nAI-powered executive operations assistant.",
     "installCommand": "git clone https://github.com/prismteam-ai/chief-of-staff-agent",
-    "discoveredAt": "2026-04-20T15:40:43.022Z",
-    "registeredAt": "2026-04-30T15:40:43.022Z",
-    "certifiedAt": "2026-05-30T15:40:43.022Z",
-    "lastUpdatedAt": "2026-06-16T15:40:43.022Z",
+    "discoveredAt": "2026-04-20T17:00:31.140Z",
+    "registeredAt": "2026-04-30T17:00:31.140Z",
+    "certifiedAt": "2026-05-30T17:00:31.140Z",
+    "lastUpdatedAt": "2026-06-16T17:00:31.140Z",
     "source": "seed",
     "repoMeta": {
       "stars": 34,
       "language": "TypeScript",
-      "lastPush": "2026-06-16T15:40:43.022Z",
+      "lastPush": "2026-06-16T17:00:31.140Z",
       "defaultBranch": "main"
     }
   },
   {
-    "id": "0c641db9-0b96-4d36-8314-bfd9814bcd91",
+    "id": "3d1caec1-a38a-4719-9347-7b77ba411348",
     "slug": "investors-mcp",
     "name": "Investors MCP",
     "description": "Model Context Protocol server providing semantic search over investor content, article matching, and knowledge retrieval for the Soofi ecosystem.",
@@ -206,26 +206,26 @@
     ],
     "readme": "# Investors MCP\n\nHosted MCP server for semantic article search.\n\nEndpoint: `https://investors-mcp.vercel.app/mcp`",
     "installCommand": "git clone https://github.com/prismteam-ai/investors-mcp && npm install",
-    "discoveredAt": "2026-03-21T15:40:43.022Z",
-    "registeredAt": "2026-03-26T15:40:43.022Z",
-    "certifiedAt": "2026-04-20T15:40:43.022Z",
-    "lastUpdatedAt": "2026-06-17T15:40:43.022Z",
+    "discoveredAt": "2026-03-21T17:00:31.140Z",
+    "registeredAt": "2026-03-26T17:00:31.140Z",
+    "certifiedAt": "2026-04-20T17:00:31.140Z",
+    "lastUpdatedAt": "2026-06-17T17:00:31.140Z",
     "source": "seed",
     "repoMeta": {
       "stars": 67,
       "language": "TypeScript",
-      "lastPush": "2026-06-17T15:40:43.022Z",
+      "lastPush": "2026-06-17T17:00:31.140Z",
       "defaultBranch": "main"
     }
   },
   {
-    "id": "aae6e9bb-22ee-4541-9fa8-be112e644d16",
+    "id": "e0391080-580c-43de-9d6f-5ec68f46a68c",
     "slug": "website-design-agent",
     "name": "Website Design Agent",
     "description": "Generates website designs from natural language briefs, producing Figma-ready layouts and responsive HTML/CSS.",
     "owner": "prismteam-ai",
     "repoUrl": "https://github.com/prismteam-ai/website-design-agent",
-    "status": "certified",
+    "status": "in_review",
     "version": "0.5.0",
     "capabilities": [
       {
@@ -262,26 +262,25 @@
     ],
     "readme": "# Website Design Agent\n\nAI-powered website design from natural language.",
     "installCommand": "git clone https://github.com/prismteam-ai/website-design-agent",
-    "discoveredAt": "2026-05-30T15:40:43.022Z",
-    "registeredAt": "2026-06-04T15:40:43.022Z",
-    "certifiedAt": "2026-06-19T15:51:23.220Z",
-    "lastUpdatedAt": "2026-06-19T15:51:23.220Z",
+    "discoveredAt": "2026-05-30T17:00:31.140Z",
+    "registeredAt": "2026-06-04T17:00:31.140Z",
+    "lastUpdatedAt": "2026-06-17T17:00:31.140Z",
     "source": "seed",
     "repoMeta": {
       "stars": 8,
       "language": "TypeScript",
-      "lastPush": "2026-06-17T15:40:43.022Z",
+      "lastPush": "2026-06-17T17:00:31.140Z",
       "defaultBranch": "main"
     }
   },
   {
-    "id": "a5a39697-b1cc-44e5-8587-3e78a58208cc",
+    "id": "89a8af5c-f818-4577-bbf5-b7249ad331f6",
     "slug": "oracle-property-intelligence",
     "name": "Oracle Property Intelligence Platform",
     "description": "RAG-powered property intelligence platform providing real-time market analysis, valuation insights, and investment recommendations.",
     "owner": "prismteam-ai",
     "repoUrl": "https://github.com/prismteam-ai/oracle-property-intelligence-platform",
-    "status": "rejected",
+    "status": "registered",
     "version": "0.3.0",
     "capabilities": [
       {
@@ -304,61 +303,15 @@
     ],
     "readme": "# Oracle Property Intelligence\n\nProperty market intelligence platform.",
     "installCommand": "",
-    "discoveredAt": "2026-06-04T15:40:43.022Z",
-    "registeredAt": "2026-06-09T15:40:43.022Z",
-    "lastUpdatedAt": "2026-06-19T15:51:24.399Z",
+    "discoveredAt": "2026-06-04T17:00:31.140Z",
+    "registeredAt": "2026-06-09T17:00:31.140Z",
+    "lastUpdatedAt": "2026-06-14T17:00:31.140Z",
     "source": "seed",
     "repoMeta": {
       "stars": 5,
       "language": "TypeScript",
-      "lastPush": "2026-06-14T15:40:43.022Z",
+      "lastPush": "2026-06-14T17:00:31.140Z",
       "defaultBranch": "main"
     }
-  },
-  {
-    "id": "4e99ca3e-676e-4ce2-ba4f-3ea7946a9883",
-    "slug": "soofi-xyz-team-kit-arceus",
-    "name": "Arceus (Master Router)",
-    "description": "Master routing agent that delegates to specialists based on natural language task descriptions",
-    "owner": "soofi-xyz",
-    "repoUrl": "https://github.com/soofi-xyz/soofi-xyz-team-kit",
-    "status": "registered",
-    "version": "0.1.0",
-    "capabilities": [],
-    "dependencies": [],
-    "tags": [
-      "team-kit",
-      "router",
-      "orchestration"
-    ],
-    "readme": "",
-    "installCommand": "",
-    "discoveredAt": "2026-06-17T15:40:43.022Z",
-    "registeredAt": "2026-06-19T15:50:29.183Z",
-    "lastUpdatedAt": "2026-06-19T15:50:29.183Z",
-    "source": "github_scan"
-  },
-  {
-    "id": "3324957b-ee10-4442-907a-009416fd1b4f",
-    "slug": "soofi-xyz-team-kit-alakazam",
-    "name": "Alakazam (RAG Specialist)",
-    "description": "Infrastructure and RAG systems specialist for building semantic search pipelines",
-    "owner": "soofi-xyz",
-    "repoUrl": "https://github.com/soofi-xyz/soofi-xyz-team-kit",
-    "status": "registered",
-    "version": "0.1.0",
-    "capabilities": [],
-    "dependencies": [],
-    "tags": [
-      "team-kit",
-      "rag",
-      "infrastructure"
-    ],
-    "readme": "",
-    "installCommand": "",
-    "discoveredAt": "2026-06-17T15:40:43.022Z",
-    "registeredAt": "2026-06-19T15:50:29.924Z",
-    "lastUpdatedAt": "2026-06-19T15:50:29.924Z",
-    "source": "github_scan"
   }
 ]

@@ -1,7 +1,7 @@
 import { v4 as uuid } from "uuid";
 import { JsonStore } from "../state/store.js";
 import { ReviewSchema, type Review } from "../config/schemas.js";
-import { transitionAgent } from "../registry/manager.js";
+import { transitionAgent, getAgent } from "../registry/manager.js";
 
 const store = new JsonStore<Review>("reviews.json", ReviewSchema);
 
@@ -66,9 +66,21 @@ export function resolveReview(
     changes_requested: "request_changes",
   };
 
+  // Map decision to expected agent target status
+  const expectedStatus: Record<string, string> = {
+    approved: "certified",
+    rejected: "rejected",
+    changes_requested: "changes_requested",
+  };
+
   const agentResult = transitionAgent(review.agentId, actionMap[decision]);
   if (agentResult.error && !agentResult.agent) {
-    return { review: null, error: agentResult.error };
+    // Allow resolving if agent is already in the expected target state
+    // (e.g. approved via Registry tab directly, agent already certified)
+    const agent = getAgent(review.agentId);
+    if (!agent || agent.status !== expectedStatus[decision]) {
+      return { review: null, error: agentResult.error };
+    }
   }
 
   const updated = store.update(id, (r) => ({
