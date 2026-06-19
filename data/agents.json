@@ -1,0 +1,317 @@
+[
+  {
+    "id": "030ba699-9d77-4470-8620-905dbcaae308",
+    "slug": "x-engagement-reply-agent",
+    "name": "X Engagement Reply Agent",
+    "description": "Polls targeted X authors, matches posts against Soofi Safavi articles via MCP semantic similarity, generates LLM reply drafts, creates Asana approval tasks.",
+    "owner": "prismteam-ai",
+    "repoUrl": "https://github.com/prismteam-ai/x-engagement-reply-agent",
+    "status": "certified",
+    "version": "1.0.0",
+    "capabilities": [
+      {
+        "name": "X Polling",
+        "description": "Monitors configured X authors for new posts on a schedule"
+      },
+      {
+        "name": "Semantic Matching",
+        "description": "Matches posts against Soofi articles via hosted MCP"
+      },
+      {
+        "name": "Reply Generation",
+        "description": "Generates 6+ reply drafts using LLM with distinct prompt strategies"
+      },
+      {
+        "name": "Asana Integration",
+        "description": "Creates approval tasks with X compose links for human review"
+      }
+    ],
+    "dependencies": [
+      "investors-mcp"
+    ],
+    "io": {
+      "inputs": [
+        {
+          "name": "watchlist",
+          "type": "yaml",
+          "description": "List of X authors to monitor"
+        },
+        {
+          "name": "prompts",
+          "type": "markdown",
+          "description": "Reply prompt templates"
+        },
+        {
+          "name": "settings",
+          "type": "yaml",
+          "description": "Thresholds, model, poll config"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "reply_drafts",
+          "type": "json",
+          "description": "Generated reply drafts with similarity scores"
+        },
+        {
+          "name": "asana_tasks",
+          "type": "asana",
+          "description": "Parent tasks + approval subtasks in Asana"
+        },
+        {
+          "name": "run_summary",
+          "type": "json",
+          "description": "Structured pipeline execution summary"
+        }
+      ]
+    },
+    "tags": [
+      "x-twitter",
+      "engagement",
+      "mcp",
+      "llm",
+      "asana"
+    ],
+    "readme": "# X Engagement Reply Agent\n\nA standalone, code-managed agent for monitoring X authors and generating recommended reply drafts grounded in Soofi Safavi's published articles.\n\n## Quick Start\n\n```bash\nnpm install\nnpm run dashboard  # http://localhost:3000\n```",
+    "installCommand": "git clone https://github.com/prismteam-ai/x-engagement-reply-agent && cd x-engagement-reply-agent && npm install",
+    "discoveredAt": "2026-05-20T15:40:43.022Z",
+    "registeredAt": "2026-05-25T15:40:43.022Z",
+    "certifiedAt": "2026-06-14T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-18T15:40:43.022Z",
+    "source": "seed",
+    "repoMeta": {
+      "stars": 12,
+      "language": "TypeScript",
+      "lastPush": "2026-06-18T15:40:43.022Z",
+      "defaultBranch": "main"
+    }
+  },
+  {
+    "id": "6997d06b-4280-4f22-9f6e-1bcdcdc83a92",
+    "slug": "chief-of-staff-agent",
+    "name": "Chief of Staff Agent",
+    "description": "Executive operations agent that manages scheduling, meeting prep, follow-ups, and stakeholder communications for senior leadership.",
+    "owner": "prismteam-ai",
+    "repoUrl": "https://github.com/prismteam-ai/chief-of-staff-agent",
+    "status": "certified",
+    "version": "2.1.0",
+    "capabilities": [
+      {
+        "name": "Calendar Management",
+        "description": "Schedules and coordinates meetings across stakeholders"
+      },
+      {
+        "name": "Meeting Prep",
+        "description": "Generates briefing documents from past interactions"
+      },
+      {
+        "name": "Follow-up Tracking",
+        "description": "Tracks action items and sends reminders"
+      }
+    ],
+    "dependencies": [
+      "x-engagement-reply-agent"
+    ],
+    "io": {
+      "inputs": [
+        {
+          "name": "calendar_events",
+          "type": "ical",
+          "description": "Calendar feed"
+        },
+        {
+          "name": "email_threads",
+          "type": "json",
+          "description": "Recent email conversations"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "briefings",
+          "type": "markdown",
+          "description": "Meeting preparation documents"
+        },
+        {
+          "name": "action_items",
+          "type": "json",
+          "description": "Tracked follow-ups and deadlines"
+        }
+      ]
+    },
+    "tags": [
+      "operations",
+      "executive",
+      "scheduling",
+      "productivity"
+    ],
+    "readme": "# Chief of Staff Agent\n\nAI-powered executive operations assistant.",
+    "installCommand": "git clone https://github.com/prismteam-ai/chief-of-staff-agent",
+    "discoveredAt": "2026-04-20T15:40:43.022Z",
+    "registeredAt": "2026-04-30T15:40:43.022Z",
+    "certifiedAt": "2026-05-30T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-16T15:40:43.022Z",
+    "source": "seed",
+    "repoMeta": {
+      "stars": 34,
+      "language": "TypeScript",
+      "lastPush": "2026-06-16T15:40:43.022Z",
+      "defaultBranch": "main"
+    }
+  },
+  {
+    "id": "0c641db9-0b96-4d36-8314-bfd9814bcd91",
+    "slug": "investors-mcp",
+    "name": "Investors MCP",
+    "description": "Model Context Protocol server providing semantic search over investor content, article matching, and knowledge retrieval for the Soofi ecosystem.",
+    "owner": "prismteam-ai",
+    "repoUrl": "https://github.com/prismteam-ai/investors-mcp",
+    "status": "certified",
+    "version": "3.0.0",
+    "capabilities": [
+      {
+        "name": "Semantic Search",
+        "description": "Vector-based content retrieval via queryInvestorContent"
+      },
+      {
+        "name": "Article Matching",
+        "description": "Compare queries against Soofi Safavi article corpus"
+      },
+      {
+        "name": "Content Ingestion",
+        "description": "Add new content to the knowledge base"
+      }
+    ],
+    "dependencies": [],
+    "io": {
+      "inputs": [
+        {
+          "name": "query",
+          "type": "string",
+          "description": "Search query text"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "matches",
+          "type": "json",
+          "description": "Ranked article matches with similarity scores"
+        }
+      ]
+    },
+    "tags": [
+      "mcp",
+      "rag",
+      "semantic-search",
+      "knowledge-base"
+    ],
+    "readme": "# Investors MCP\n\nHosted MCP server for semantic article search.\n\nEndpoint: `https://investors-mcp.vercel.app/mcp`",
+    "installCommand": "git clone https://github.com/prismteam-ai/investors-mcp && npm install",
+    "discoveredAt": "2026-03-21T15:40:43.022Z",
+    "registeredAt": "2026-03-26T15:40:43.022Z",
+    "certifiedAt": "2026-04-20T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-17T15:40:43.022Z",
+    "source": "seed",
+    "repoMeta": {
+      "stars": 67,
+      "language": "TypeScript",
+      "lastPush": "2026-06-17T15:40:43.022Z",
+      "defaultBranch": "main"
+    }
+  },
+  {
+    "id": "aae6e9bb-22ee-4541-9fa8-be112e644d16",
+    "slug": "website-design-agent",
+    "name": "Website Design Agent",
+    "description": "Generates website designs from natural language briefs, producing Figma-ready layouts and responsive HTML/CSS.",
+    "owner": "prismteam-ai",
+    "repoUrl": "https://github.com/prismteam-ai/website-design-agent",
+    "status": "in_review",
+    "version": "0.5.0",
+    "capabilities": [
+      {
+        "name": "Design Generation",
+        "description": "Creates website layouts from text briefs"
+      },
+      {
+        "name": "Responsive Output",
+        "description": "Generates mobile-first responsive designs"
+      }
+    ],
+    "dependencies": [],
+    "io": {
+      "inputs": [
+        {
+          "name": "brief",
+          "type": "string",
+          "description": "Natural language design brief"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "design",
+          "type": "html",
+          "description": "Generated HTML/CSS layout"
+        }
+      ]
+    },
+    "tags": [
+      "design",
+      "frontend",
+      "figma",
+      "generative"
+    ],
+    "readme": "# Website Design Agent\n\nAI-powered website design from natural language.",
+    "installCommand": "git clone https://github.com/prismteam-ai/website-design-agent",
+    "discoveredAt": "2026-05-30T15:40:43.022Z",
+    "registeredAt": "2026-06-04T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-17T15:40:43.022Z",
+    "source": "seed",
+    "repoMeta": {
+      "stars": 8,
+      "language": "TypeScript",
+      "lastPush": "2026-06-17T15:40:43.022Z",
+      "defaultBranch": "main"
+    }
+  },
+  {
+    "id": "a5a39697-b1cc-44e5-8587-3e78a58208cc",
+    "slug": "oracle-property-intelligence",
+    "name": "Oracle Property Intelligence Platform",
+    "description": "RAG-powered property intelligence platform providing real-time market analysis, valuation insights, and investment recommendations.",
+    "owner": "prismteam-ai",
+    "repoUrl": "https://github.com/prismteam-ai/oracle-property-intelligence-platform",
+    "status": "registered",
+    "version": "0.3.0",
+    "capabilities": [
+      {
+        "name": "Market Analysis",
+        "description": "Real-time property market analysis"
+      },
+      {
+        "name": "Valuation",
+        "description": "AI-powered property valuation models"
+      }
+    ],
+    "dependencies": [
+      "investors-mcp"
+    ],
+    "tags": [
+      "property",
+      "rag",
+      "intelligence",
+      "real-estate"
+    ],
+    "readme": "# Oracle Property Intelligence\n\nProperty market intelligence platform.",
+    "installCommand": "",
+    "discoveredAt": "2026-06-04T15:40:43.022Z",
+    "registeredAt": "2026-06-09T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-14T15:40:43.022Z",
+    "source": "seed",
+    "repoMeta": {
+      "stars": 5,
+      "language": "TypeScript",
+      "lastPush": "2026-06-14T15:40:43.022Z",
+      "defaultBranch": "main"
+    }
+  }
+]

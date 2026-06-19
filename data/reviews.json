@@ -1,0 +1,35 @@
+[
+  {
+    "id": "9ae64d99-c7a6-4828-992a-421f3727d562",
+    "agentId": "aae6e9bb-22ee-4541-9fa8-be112e644d16",
+    "reviewer": "platform-admin",
+    "status": "pending",
+    "checklist": {
+      "hasDescription": true,
+      "hasCapabilities": true,
+      "hasDependencies": true,
+      "hasIO": true,
+      "codeReviewed": false,
+      "securityChecked": false
+    },
+    "comments": "Looks promising. Need to complete code review and security check.",
+    "submittedAt": "2026-06-16T15:40:43.022Z"
+  },
+  {
+    "id": "a1a45348-da84-4fbf-b828-da124d8fce29",
+    "agentId": "030ba699-9d77-4470-8620-905dbcaae308",
+    "reviewer": "platform-admin",
+    "status": "approved",
+    "checklist": {
+      "hasDescription": true,
+      "hasCapabilities": true,
+      "hasDependencies": true,
+      "hasIO": true,
+      "codeReviewed": true,
+      "securityChecked": true
+    },
+    "comments": "Excellent implementation. All criteria met. MCP integration verified.",
+    "submittedAt": "2026-06-09T15:40:43.022Z",
+    "resolvedAt": "2026-06-14T15:40:43.022Z"
+  }
+]

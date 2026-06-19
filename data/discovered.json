@@ -1,0 +1,112 @@
+[
+  {
+    "id": "4e99ca3e-676e-4ce2-ba4f-3ea7946a9883",
+    "slug": "soofi-xyz-team-kit-arceus",
+    "name": "Arceus (Master Router)",
+    "description": "Master routing agent that delegates to specialists based on natural language task descriptions",
+    "owner": "soofi-xyz",
+    "repoUrl": "https://github.com/soofi-xyz/soofi-xyz-team-kit",
+    "status": "discovered",
+    "version": "0.1.0",
+    "capabilities": [],
+    "dependencies": [],
+    "tags": [
+      "team-kit",
+      "router",
+      "orchestration"
+    ],
+    "readme": "",
+    "installCommand": "",
+    "discoveredAt": "2026-06-17T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-17T15:40:43.022Z",
+    "source": "github_scan"
+  },
+  {
+    "id": "3324957b-ee10-4442-907a-009416fd1b4f",
+    "slug": "soofi-xyz-team-kit-alakazam",
+    "name": "Alakazam (RAG Specialist)",
+    "description": "Infrastructure and RAG systems specialist for building semantic search pipelines",
+    "owner": "soofi-xyz",
+    "repoUrl": "https://github.com/soofi-xyz/soofi-xyz-team-kit",
+    "status": "discovered",
+    "version": "0.1.0",
+    "capabilities": [],
+    "dependencies": [],
+    "tags": [
+      "team-kit",
+      "rag",
+      "infrastructure"
+    ],
+    "readme": "",
+    "installCommand": "",
+    "discoveredAt": "2026-06-17T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-17T15:40:43.022Z",
+    "source": "github_scan"
+  },
+  {
+    "id": "ad54938c-446e-4f73-a42d-f89b5da44468",
+    "slug": "soofi-xyz-team-kit-sylveon",
+    "name": "Sylveon (Figma-to-Code)",
+    "description": "Design-focused agent for converting Figma designs to production frontend code",
+    "owner": "soofi-xyz",
+    "repoUrl": "https://github.com/soofi-xyz/soofi-xyz-team-kit",
+    "status": "discovered",
+    "version": "0.1.0",
+    "capabilities": [],
+    "dependencies": [],
+    "tags": [
+      "team-kit",
+      "design",
+      "frontend"
+    ],
+    "readme": "",
+    "installCommand": "",
+    "discoveredAt": "2026-06-17T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-17T15:40:43.022Z",
+    "source": "github_scan"
+  },
+  {
+    "id": "43d26188-8fcc-42e6-b4c1-4f32fba37433",
+    "slug": "soofi-xyz-team-kit-machamp",
+    "name": "Machamp (Batch Workflows)",
+    "description": "Agent for building and managing batch data processing workflows",
+    "owner": "soofi-xyz",
+    "repoUrl": "https://github.com/soofi-xyz/soofi-xyz-team-kit",
+    "status": "discovered",
+    "version": "0.1.0",
+    "capabilities": [],
+    "dependencies": [],
+    "tags": [
+      "team-kit",
+      "batch",
+      "data-processing"
+    ],
+    "readme": "",
+    "installCommand": "",
+    "discoveredAt": "2026-06-17T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-17T15:40:43.022Z",
+    "source": "github_scan"
+  },
+  {
+    "id": "080a7150-ce6d-4e74-a7d9-3e235ddaef8a",
+    "slug": "soofi-xyz-team-kit-audino",
+    "name": "Audino (Frontend Bug Fix)",
+    "description": "Specialized agent for diagnosing and fixing frontend bugs with test-first approach",
+    "owner": "soofi-xyz",
+    "repoUrl": "https://github.com/soofi-xyz/soofi-xyz-team-kit",
+    "status": "discovered",
+    "version": "0.1.0",
+    "capabilities": [],
+    "dependencies": [],
+    "tags": [
+      "team-kit",
+      "frontend",
+      "debugging"
+    ],
+    "readme": "",
+    "installCommand": "",
+    "discoveredAt": "2026-06-17T15:40:43.022Z",
+    "lastUpdatedAt": "2026-06-17T15:40:43.022Z",
+    "source": "github_scan"
+  }
+]

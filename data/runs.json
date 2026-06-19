@@ -1,0 +1,218 @@
+[
+  {
+    "id": "039895bc-c624-49c8-8f2c-d2faf1695409",
+    "agentId": "030ba699-9d77-4470-8620-905dbcaae308",
+    "timestamp": "2026-06-08T04:21:14.468Z",
+    "durationMs": 32003,
+    "status": "success",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "b742bf27-f505-4561-9cf6-2e1073bb197e",
+    "agentId": "6997d06b-4280-4f22-9f6e-1bcdcdc83a92",
+    "timestamp": "2026-06-08T18:30:47.566Z",
+    "durationMs": 106018,
+    "status": "success",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "2579c69d-d625-40f8-9717-eddd00b0db43",
+    "agentId": "0c641db9-0b96-4d36-8314-bfd9814bcd91",
+    "timestamp": "2026-06-09T14:03:08.974Z",
+    "durationMs": 117322,
+    "status": "success",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "0524047e-7105-4da2-9da8-49531895b0d6",
+    "agentId": "030ba699-9d77-4470-8620-905dbcaae308",
+    "timestamp": "2026-06-10T11:40:38.291Z",
+    "durationMs": 60904,
+    "status": "success",
+    "triggeredBy": "manual",
+    "metadata": {}
+  },
+  {
+    "id": "22c663f7-29fb-43f4-88be-3c03a0ca2694",
+    "agentId": "6997d06b-4280-4f22-9f6e-1bcdcdc83a92",
+    "timestamp": "2026-06-10T19:13:22.775Z",
+    "durationMs": 92935,
+    "status": "success",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "ab6620d2-d291-48dc-acbd-cc42c5a8ddb3",
+    "agentId": "0c641db9-0b96-4d36-8314-bfd9814bcd91",
+    "timestamp": "2026-06-11T07:23:54.173Z",
+    "durationMs": 77158,
+    "status": "success",
+    "triggeredBy": "manual",
+    "metadata": {}
+  },
+  {
+    "id": "189a5e7a-1d93-464d-af9c-7d13a2beff1f",
+    "agentId": "6997d06b-4280-4f22-9f6e-1bcdcdc83a92",
+    "timestamp": "2026-06-11T11:25:58.657Z",
+    "durationMs": 91489,
+    "status": "success",
+    "triggeredBy": "webhook",
+    "metadata": {}
+  },
+  {
+    "id": "5a9900d8-7a9f-44b1-b2e9-bc5c98b97ba9",
+    "agentId": "6997d06b-4280-4f22-9f6e-1bcdcdc83a92",
+    "timestamp": "2026-06-11T15:49:11.560Z",
+    "durationMs": 30045,
+    "status": "failure",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "9f1d2759-768f-490b-a0b9-cdc5d48c2dcb",
+    "agentId": "0c641db9-0b96-4d36-8314-bfd9814bcd91",
+    "timestamp": "2026-06-12T16:07:08.627Z",
+    "durationMs": 110561,
+    "status": "failure",
+    "triggeredBy": "webhook",
+    "metadata": {}
+  },
+  {
+    "id": "237761a7-9a8b-4e4a-a5e2-66958cf93cfb",
+    "agentId": "030ba699-9d77-4470-8620-905dbcaae308",
+    "timestamp": "2026-06-13T15:12:51.289Z",
+    "durationMs": 39573,
+    "status": "failure",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "bdddac3c-4c64-4e64-9f0c-8e55641587b1",
+    "agentId": "0c641db9-0b96-4d36-8314-bfd9814bcd91",
+    "timestamp": "2026-06-13T21:24:47.850Z",
+    "durationMs": 16599,
+    "status": "success",
+    "triggeredBy": "manual",
+    "metadata": {}
+  },
+  {
+    "id": "c89da31e-019d-46df-931c-6b7048fd173d",
+    "agentId": "030ba699-9d77-4470-8620-905dbcaae308",
+    "timestamp": "2026-06-14T14:25:43.976Z",
+    "durationMs": 100754,
+    "status": "success",
+    "triggeredBy": "manual",
+    "metadata": {}
+  },
+  {
+    "id": "803e3a8a-99c3-470d-8367-70c7eb7d0b5f",
+    "agentId": "0c641db9-0b96-4d36-8314-bfd9814bcd91",
+    "timestamp": "2026-06-15T03:01:24.071Z",
+    "durationMs": 103017,
+    "status": "success",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "169f3478-6809-4845-ba61-dcffca378a4a",
+    "agentId": "0c641db9-0b96-4d36-8314-bfd9814bcd91",
+    "timestamp": "2026-06-15T13:08:03.911Z",
+    "durationMs": 48573,
+    "status": "success",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "14e86527-656a-4fce-9074-4397b9c8fb94",
+    "agentId": "0c641db9-0b96-4d36-8314-bfd9814bcd91",
+    "timestamp": "2026-06-15T22:15:45.215Z",
+    "durationMs": 104098,
+    "status": "success",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "83212089-7f66-45e9-bbdb-54b1da732cec",
+    "agentId": "0c641db9-0b96-4d36-8314-bfd9814bcd91",
+    "timestamp": "2026-06-15T23:34:36.458Z",
+    "durationMs": 50971,
+    "status": "failure",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "2050f86f-7cba-47f0-92a3-07f53c16cf5e",
+    "agentId": "030ba699-9d77-4470-8620-905dbcaae308",
+    "timestamp": "2026-06-16T20:21:34.021Z",
+    "durationMs": 4951,
+    "status": "success",
+    "triggeredBy": "manual",
+    "metadata": {}
+  },
+  {
+    "id": "e2825894-360f-40ba-947c-54fe13b7cb94",
+    "agentId": "6997d06b-4280-4f22-9f6e-1bcdcdc83a92",
+    "timestamp": "2026-06-16T21:42:37.654Z",
+    "durationMs": 88474,
+    "status": "success",
+    "triggeredBy": "manual",
+    "metadata": {}
+  },
+  {
+    "id": "7e63c279-d9c3-42cf-84db-e248635b9e7e",
+    "agentId": "6997d06b-4280-4f22-9f6e-1bcdcdc83a92",
+    "timestamp": "2026-06-17T00:37:21.975Z",
+    "durationMs": 34461,
+    "status": "success",
+    "triggeredBy": "manual",
+    "metadata": {}
+  },
+  {
+    "id": "7a87502e-404a-446f-b1e0-d6b63dae28ad",
+    "agentId": "6997d06b-4280-4f22-9f6e-1bcdcdc83a92",
+    "timestamp": "2026-06-17T22:11:10.731Z",
+    "durationMs": 46510,
+    "status": "success",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "694a5ba2-42d3-4441-895b-78ce0aa0bd5a",
+    "agentId": "030ba699-9d77-4470-8620-905dbcaae308",
+    "timestamp": "2026-06-18T08:10:19.970Z",
+    "durationMs": 99969,
+    "status": "failure",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "d8f2fb07-7558-4b9d-b322-be4ccd76e8fa",
+    "agentId": "6997d06b-4280-4f22-9f6e-1bcdcdc83a92",
+    "timestamp": "2026-06-18T13:53:47.131Z",
+    "durationMs": 65628,
+    "status": "success",
+    "triggeredBy": "cron",
+    "metadata": {}
+  },
+  {
+    "id": "bdef86fb-2477-4954-afc5-286cea0083c6",
+    "agentId": "030ba699-9d77-4470-8620-905dbcaae308",
+    "timestamp": "2026-06-18T15:53:42.759Z",
+    "durationMs": 118688,
+    "status": "success",
+    "triggeredBy": "webhook",
+    "metadata": {}
+  },
+  {
+    "id": "cb1be955-8322-45b6-b3a4-92eee3af449e",
+    "agentId": "030ba699-9d77-4470-8620-905dbcaae308",
+    "timestamp": "2026-06-19T12:49:07.689Z",
+    "durationMs": 77376,
+    "status": "failure",
+    "triggeredBy": "webhook",
+    "metadata": {}
+  }
+]
