@@ -1,0 +1,25 @@
+# Render Blueprint — deploys the Agent Network Platform as a public web
+# service built from the Dockerfile. Demo data is seeded on first boot.
+#
+# To deploy:
+#   1. Push this repo to GitHub (done).
+#   2. On render.com: New + > Web Service > connect this repo.
+#   3. Pick the branch you want to deploy (e.g. final-submission or main).
+#   4. Render auto-detects the Dockerfile. No credentials required.
+#   5. Deploy. Render injects PORT automatically; the server reads it.
+#
+# Note: the free plan uses an ephemeral filesystem, so registry edits made
+# during a session reset on redeploy/restart back to the committed seed data.
+# That is fine for a demo. For durable storage, attach a Render Disk mounted
+# at /app/data (paid) or move the JSON store to a database.
+services:
+  - type: web
+    name: agent-network-platform
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: LOG_LEVEL
+        value: info

@@ -3,6 +3,26 @@
 Central registry for all AI agents in the soofi.xyz ecosystem. Manages the full agent lifecycle: discovery from GitHub → registration with metadata → certification review → marketplace publication.
 
 > 🎬 **Demo walkthrough:** see [`My Movie.mp4`](./My%20Movie.mp4) in this repo (tracked via Git LFS).
+>
+> 🌐 **Live runtime:** _`<RENDER_URL>` — deployed; browse the 7 tabs (Discovery, Registry, Certification, Marketplace, Network, Metrics)._ See [Live Deployment](#live-deployment-render).
+
+## Live Deployment (Render)
+
+The platform is deployed as a public web service on [Render](https://render.com)
+so it can be exercised in a browser without any local setup. A
+[`render.yaml`](./render.yaml) Blueprint is included.
+
+To deploy your own instance:
+
+1. On Render: **New + → Web Service** and connect this repo.
+2. Choose the branch to deploy. Render auto-detects the `Dockerfile`.
+3. No credentials are required. Demo data is seeded automatically on first boot.
+4. Deploy. Render injects `PORT`; the server reads it automatically.
+
+> Free-tier note: the filesystem is ephemeral, so registry changes reset to the
+> committed seed data on redeploy/restart, and the service cold-starts (~50s)
+> after ~15 min idle. Both are fine for evaluation. GitHub discovery uses the
+> unauthenticated public API (~60 req/hr).
 
 ## Quick Start
 
