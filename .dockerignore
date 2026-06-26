@@ -1,0 +1,8 @@
+node_modules
+dist
+.git
+.gitattributes
+.env
+*.log
+*.mp4
+.DS_Store

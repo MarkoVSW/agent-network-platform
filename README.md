@@ -2,7 +2,24 @@
 
 Central registry for all AI agents in the soofi.xyz ecosystem. Manages the full agent lifecycle: discovery from GitHub → registration with metadata → certification review → marketplace publication.
 
+> 🎬 **Demo walkthrough:** see [`My Movie.mp4`](./My%20Movie.mp4) in this repo (tracked via Git LFS).
+
 ## Quick Start
+
+### Option A: Docker (easiest — no local Node setup)
+
+Requires Docker with Compose v2.
+
+```bash
+docker compose up --build
+```
+
+Open **http://localhost:3001**. Demo data is seeded automatically on first boot.
+The `data/` directory is mounted from the host, so registry changes persist
+across restarts. To reset to a clean demo state, delete `data/*.json` (or run
+`npm run seed`) and restart.
+
+### Option B: Local Node
 
 ```bash
 # Install dependencies

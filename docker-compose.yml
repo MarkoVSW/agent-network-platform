@@ -1,0 +1,26 @@
+# Agent Network Registration & Certification Platform
+#
+# Quick start:
+#   docker compose up --build
+#   open http://localhost:3001
+#
+# Demo data is seeded automatically on first boot. The data/ directory is
+# mounted from the host so registry changes persist across restarts.
+# To reset to a clean demo state: delete data/*.json (or run `npm run seed`)
+# and restart.
+#
+# Note: GitHub discovery uses the unauthenticated public API
+# (~60 requests/hour). That is plenty for the demo scenarios.
+services:
+  agent-network-platform:
+    build: .
+    image: agent-network-platform
+    container_name: agent-network-platform
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
