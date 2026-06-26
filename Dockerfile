@@ -12,7 +12,8 @@ COPY . .
 
 EXPOSE 3001
 
-# Seed demo data on first boot (only if the data store is empty), then start.
-# data/ is bind-mounted in docker-compose, so on a fresh checkout the committed
-# seed data is reused and this skips straight to the server.
-CMD ["sh", "-c", "[ -f data/agents.json ] || npm run seed; npm run dev"]
+# Seed fresh demo data on every boot, then start. Seeding regenerates run/review
+# timestamps relative to "now", so the Dashboard and Metrics tabs (which window
+# on the last 7 days) always show live activity on a hosted deploy. On the
+# ephemeral free tier this also gives a clean demo state after each restart.
+CMD ["sh", "-c", "npm run seed && npm run dev"]

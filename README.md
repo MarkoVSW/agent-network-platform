@@ -4,7 +4,7 @@ Central registry for all AI agents in the soofi.xyz ecosystem. Manages the full 
 
 > 🎬 **Demo walkthrough:** see [`My Movie.mp4`](./My%20Movie.mp4) in this repo (tracked via Git LFS).
 >
-> 🌐 **Live runtime:** _`<RENDER_URL>` — deployed; browse the 7 tabs (Discovery, Registry, Certification, Marketplace, Network, Metrics)._ See [Live Deployment](#live-deployment-render).
+> 🌐 **Live runtime:** **https://agent-network-platform.onrender.com** — browse the 7 tabs (Dashboard, Discovery, Registry, Certification, Marketplace, Network, Metrics). See [Live Deployment](#live-deployment-render).
 
 ## Live Deployment (Render)
 
